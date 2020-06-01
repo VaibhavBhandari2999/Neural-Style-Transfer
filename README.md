@@ -4,4 +4,18 @@ Neural style transfer is an optimization technique used to take three images, a 
 
 We use the VGG19 model for this implementation. VGG19 is easily downloadable from keras.
 
+Neural style transfer uses a pretrained convolution neural network. Then to define a loss function which blends two images seamlessly to create visually appealing art, NST defines the following inputs:
+A content image (c) — the image we want to transfer a style to
+A style image (s) — the image we want to transfer the style from
+An input (generated) image (g) — the image that contains the final result (the only trainable variable)
+The architecture of the model as well as how the loss is computed is shown below. 
+
 ![1_ZgW520SZr1QkGoFd3xqYMw](https://user-images.githubusercontent.com/30387574/83442587-06726080-a466-11ea-8b8f-d0f0ccdddeaf.jpeg)
+
+<h3>Output</h3>
+I have used an image of Andrew NG as the <b>Content Image</b>
+I have used a cubic piece of art by Picasso as the <b>Style Image</b>
+
+The generated image is essentialy a mix of both, with Andrew NG drawn in the style of Picasso.
+
+![content_2](https://user-images.githubusercontent.com/30387574/83443189-f60eb580-a466-11ea-8fa7-0f443eef8886.jpg) + ![style_3](https://user-images.githubusercontent.com/30387574/83443229-0aeb4900-a467-11ea-9379-a9d14147b2af.jpg) = ![xyz](https://user-images.githubusercontent.com/30387574/83443267-18a0ce80-a467-11ea-826e-d9a8fd62a665.png)
