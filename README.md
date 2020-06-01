@@ -4,4 +4,4 @@ Neural style transfer is an optimization technique used to take three images, a 
 
 We use the VGG19 model for this implementation. VGG19 is easily downloadable from keras.
 
-https://user-images.githubusercontent.com/30387574/83442587-06726080-a466-11ea-8b8f-d0f0ccdddeaf.jpeg
+![1_ZgW520SZr1QkGoFd3xqYMw](https://user-images.githubusercontent.com/30387574/83442587-06726080-a466-11ea-8b8f-d0f0ccdddeaf.jpeg)
